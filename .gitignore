@@ -1,0 +1,24 @@
+# Segredos
+.env
+credentials/
+*.json.key
+*-sa.json
+
+# Python
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Dados locais
+data/
+*.zip
+*.csv
+
+# dbt
+dbt_prf/target/
+dbt_prf/dbt_packages/
+dbt_prf/logs/
+dbt_prf/.user.yml
+
+# Airflow
+airflow/logs/

@@ -1,0 +1,18 @@
+name: dbt_prf
+version: "1.0.0"
+profile: dbt_prf
+
+model-paths: ["models"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+target-path: target
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  dbt_prf:
+    silver:
+      +schema: silver
+      +materialized: table
+    gold:
+      +schema: gold
+      +materialized: table
